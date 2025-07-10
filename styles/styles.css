@@ -31,12 +31,11 @@ aside {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
+    width: 200px;
 }
 
 aside img{
-    width: 200%;
-    height: auto;
-   
+    width: 200px;
 }
 
 main img{
