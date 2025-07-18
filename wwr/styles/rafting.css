@@ -25,7 +25,7 @@ body{
 }
 
 header, main, footer{
-    width: 840px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -46,6 +46,7 @@ nav, p, section, article{
 
 .hero{
     position: relative;
+    
 }
 
 .hero img{
@@ -54,19 +55,24 @@ nav, p, section, article{
     height: auto;
 }
 
-.hero article {
+.hero-article {
     position: absolute;
-    bottom: 32px;
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(29, 53, 87, 0.85); 
     color: var(--accent2-color);
-    padding: 24px 32px;
+    padding: 24px 52px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    max-width: 80%;
+    max-width: 1200px;
     text-align: center;
     z-index: 2;
+}
+
+.hero-article h2{
+    font-size: 2.5rem;
+    margin-bottom: 16px;
 }
 
 h1{
@@ -77,10 +83,24 @@ h1{
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: var(#fff);
+    color: #fff;
 }
 
 .hero article img{
     float: right;
     width: 125px;
+}
+
+.adventure{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    color: black;
+}
+
+.adventure img {
+    max-width: 500px;   
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
 }
