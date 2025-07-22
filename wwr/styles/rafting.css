@@ -8,10 +8,50 @@
 
 }
 
+/* Header Section */
 header{
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    padding: 16px 32px;
+    margin-bottom: 32px;
 }
+
+header img{
+    height: 200px;
+    width: auto;
+    justify-self: start;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 18px;
+    border-radius: 7%;
+    transition: background-color 0.2s ;
+
+    
+}
+
+nav ul li a:hover{
+    background: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+/* Global Styles */
 
 *{
     margin: 0;
@@ -56,18 +96,20 @@ nav, p, section, article{
 }
 
 .hero-article {
-    position: absolute;
-    bottom: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(29, 53, 87, 0.85); 
-    color: var(--accent2-color);
-    padding: 24px 52px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    max-width: 1200px;
-    text-align: center;
+     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    background: rgba(29, 53, 87, 0.85);
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    gap: 24px;
+    bottom: 450px;
 }
 
 .hero-article h2{
@@ -87,9 +129,62 @@ nav, p, section, article{
 }
 
 .hero article img{
-    float: right;
-    width: 125px;
+     height: 160px;
+     width: auto;
+    border-radius: 8px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-left: 0;
+    background: #e0f6fb;
+    padding: 0px;
 }
+
+.hero-article p {
+    color: #fff;
+    font-size: 1rem;
+    flex: 2;
+    margin: 0;
+}
+
+/* history Section */
+.history {
+    text-align: center;
+    padding: 32px 16px;
+    margin-top: -250px;
+}
+
+.history h2 {
+    font-family: var(--heading-font);
+    color: black;
+    margin-bottom: 24px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history-content p {
+    width: 30%;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.history-content img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    background-color: var(--accent1-color); 
+    padding: 5px;
+    border-radius: 8px;
+}
+
 
 .adventure{
     display: flex;
