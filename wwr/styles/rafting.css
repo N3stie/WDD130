@@ -255,10 +255,6 @@ footer p{
     justify-content: center;
 }
 
-.socialmedia a{
-    transform: transform 0.03s ease;
-}
-
 .socialmedia a:hover {
     transform: translateY(-5px) scale(1.1);
 }
