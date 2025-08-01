@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PaddleUp Rafting</title>
+    <meta name="description" content="Contact PaddleUp for rafting adventures. Meet our team and get in touch.">
+    <meta name="author" content="Ernest M. Bonifacio">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/paddleuplogo.webp" alt="PaddleUp company logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>Meet Our Team</h1>
+            
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/raftingemployee1.jpg" alt="Sarah Johnson - Head Guide">
+                    <figcaption>Sarah Johnson<br><em>Head Guide</em></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raftingemployee2.webp" alt="Mike Chen - Safety Coordinator">
+                    <figcaption>Mike Chen<br><em>Safety Coordinator</em></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/raftingemployee3.jpg" alt="Emily Rodriguez - Customer Relations">
+                    <figcaption>Emily Rodriguez<br><em>Customer Relations</em></figcaption>
+                </figure>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Purpose of Message:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="purpose" value="inquiry" checked>
+                                General Inquiry
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Your Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PaddleUp | Ernest M. Bonifacio. All rights reserved.</p>
+        <p><a href="contact-wireframe.html" target="_blank">View Contact Page Wireframe</a></p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook" height="60">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/x.webp" alt="Twitter" height="60">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="Instagram" height="60">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
