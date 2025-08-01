@@ -7,9 +7,9 @@
     <meta name="description" content="Contact PaddleUp for rafting adventures. Meet our team and get in touch.">
     <meta name="author" content="Ernest M. Bonifacio">
     
-    
-    <link rel="stylesheet" href="styles/rafting.css">
-    
+    <link rel="stylesheet" href="styles/contact.css">
+
+                <!-- Fonts Section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="wwr/images/paddleuplogo.webp" alt="PaddleUp company logo">
+        <img src="images/paddleuplogo.webp" alt="PaddleUp company logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -27,10 +27,10 @@
     </header>
 
     <main>
-        <div>
+        <div class="contact-container">
             <h1>Meet Our Team</h1>
             
-            <div>
+            <div class="employee-profiles">
                 <figure>
                     <img src="images/raftingemployee1.jpg" alt="Sarah Johnson - Head Guide">
                     <figcaption>Sarah Johnson<br><em>Head Guide</em></figcaption>
@@ -44,81 +44,82 @@
                     <figcaption>Emily Rodriguez<br><em>Customer Relations</em></figcaption>
                 </figure>
             </div>
-
-            <div>
+                        <!-- For Location of the Kayak -->
+            <div class="location-section">
                 <h2>Our Location</h2>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30960.61282548135!2d121.05231081545142!3d14.072653720818952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7146ab3de76d%3A0xcc817fe6a62ec409!2sKayak%20Philippines%20Kayak%20Camp%20Tanauan!5e0!3m2!1sen!2sph!4v1754063657007!5m2!1sen!2sph" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30960.61282548135!2d121.05231081545142!3d14.072653720818952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7146ab3de76d%3A0xcc817fe6a62ec409!2sKayak%20Philippines%20Kayak%20Camp%20Tanauan!5e0!3m2!1sen!2sph!4v1754065474052!5m2!1sen!2sph"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
                 <address>
                     Kayak Philippines Kayak Camp, Tanauan<br>
                     Open daily 8:00 AM - 5:00 PM
                 </address>
             </div>
-
-            <div>
+                    <!-- Contact Section -->
+            <div class="contact-form-container">
                 <h2>Contact Us</h2>
                 <form id="contactForm">
-                    <div>
+                    <div class="form-group">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     
-                    <div>
+                    <div class="form-group">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
-                    <div>
-                        <label>Purpose of Message:</label>
-                        <div id="purpose-group"> 
-                            <label id="inquiry-label"> 
-                                <input type="radio" id="inquiry" name="purpose" value="inquiry" checked> <
+                    <div class="form-group">
+                        <label for="purpose-group">Purpose of Message:</label>
+                        <div id="purpose-group" class="radio-group">
+                            <label for="inquiry">
+                                <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
                                 General Inquiry
                             </label>
-                            <label id="reservation-label"> 
-                                <input type="radio" id="reservation" name="purpose" value="reservation"> 
+                            <label for="reservation">
+                                <input type="radio" id="reservation" name="purpose" value="reservation">
                                 Reservation Question
                             </label>
-                            <label id="suggestion-label"> 
-                                <input type="radio" id="suggestion" name="purpose" value="suggestion"> 
+                            <label for="suggestion">
+                                <input type="radio" id="suggestion" name="purpose" value="suggestion">
                                 Website Suggestion
                             </label>
                         </div>
                     </div>
                     
-                    <div>
+                    <div class="form-group">
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     
-                    <div>
-                        <label id="newsletter-label"> 
-                            <input type="checkbox" id="newsletter" name="newsletter"> 
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
                             Please subscribe me to the monthly newsletter
                         </label>
                     </div>
                     
-                    <button type="submit" id="submit-button">Send Your Message</button> 
+                    <button type="submit" id="submit-button" class="submit-button">Send Your Message</button>
                 </form>
             </div>
         </div>
     </main>
 
     <footer>
+                            <!-- Social Media Section -->
         <p>&copy; 2023 PaddleUp | Ernest M. Bonifacio. All rights reserved.</p>
         <p><a href="contact-wireframe.html" target="_blank">View Contact Page Wireframe</a></p>
-        <nav>
+        <nav class="social-links">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.webp" alt="Facebook" height="60">
+                <img src="images/facebook.webp" alt="Facebook" width="32" height="32">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/x.webp" alt="Twitter" height="60">
+                <img src="images/x.webp" alt="Twitter" width="32" height="32">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.webp" alt="Instagram" height="60">
+                <img src="images/instagram.webp" alt="Instagram" width="32" height="32">
             </a>
         </nav>
     </footer>
