@@ -1,6 +1,3 @@
-/* styles/contact.css */
-
-/* Base Styles */
 :root {
     --primary-color: #2F5233;   /*Cal Poly Green*/
     --secondary-color: #1D3557; /*Berkeley Blue*/
@@ -23,13 +20,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color); /* Header color changed to primary green */
+    color: var(--primary-color); 
 }
 
 /* Header Styles */
 header {
     padding: 20px;
-    background-color: var(--primary-color); /* Changed to primary green */
+    background-color: var(--primary-color); 
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
@@ -107,13 +104,13 @@ main {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--secondary-color); /* Now Berkeley Blue */
+    border: 5px solid var(--secondary-color); 
 }
 
 .employee-profiles figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
-    color: var(--secondary-color); /* Now Berkeley Blue */
+    color: var(--secondary-color); 
 }
 
 /* Location Section */
@@ -123,7 +120,7 @@ main {
 
 .map-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     margin: 1.5rem 0;
@@ -140,7 +137,7 @@ main {
 
 /* Contact Form Styles */
 .contact-form-container {
-    background-color: var(--accent2-color); /* Now Linen */
+    background-color: var(--accent2-color); 
     padding: 2rem;
     border-radius: 8px;
 }
@@ -153,7 +150,7 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: var(--secondary-color); /* Now Berkeley Blue */
+    color: var(--secondary-color); 
 }
 
 input[type="text"],
@@ -175,7 +172,7 @@ fieldset {
 legend {
     padding: 0 0.5rem;
     font-weight: bold;
-    color: var(--secondary-color); /* Now Berkeley Blue */
+    color: var(--secondary-color); 
 }
 
 input[type="radio"],
@@ -184,7 +181,7 @@ input[type="checkbox"] {
 }
 
 .submit-button {
-    background-color: var(--primary-color); /* Now Cal Poly Green */
+    background-color: var(--primary-color); 
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -195,12 +192,12 @@ input[type="checkbox"] {
 }
 
 .submit-button:hover {
-    background-color: var(--secondary-color); /* Now Berkeley Blue */
+    background-color: var(--secondary-color);
 }
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color); /* Now Cal Poly Green */
+    background-color: var(--primary-color); 
     color: white;
     text-align: center;
     padding: 1.5rem;
@@ -275,6 +272,6 @@ footer p {
 .section-title {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--primary-color); /* Now Cal Poly Green */
+    color: var(--primary-color); 
     font-family: var(--heading-font);
 }
